@@ -17,7 +17,7 @@ export default function Header() {
         <div className='flex items-center gap-4'>
             <DarkModeSwitch/>
             <Link href={'/'} className='flex item-center'>
-                <span className='text-2xl font-bold bg-teal-500 py-1 px-2 rounded-lg text-white'>NEXT</span>
+                <span className='text-2xl font-bold bg-teal-500 py-1 px-2 rounded-lg text-white'>NeXT</span>
                 <span className='text-2xl font-thin text-teal-600 py-1 px-2 dark:text-white'>MOVIES</span>
             </Link>
         </div>
