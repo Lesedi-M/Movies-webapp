@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Providers from "./Providers";
+import SearchBox from "@/components/SearchBox";
 
 import NavBar from "@/components/NavBar";
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <Providers  >
           <Header/>
           <NavBar/>
+          <SearchBox/>
           {children}
         </Providers>
         </body>
