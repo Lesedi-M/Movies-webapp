@@ -1,4 +1,5 @@
 import Results from '@/components/Results';
+import Head from 'next/head';
 
 const API_KEY = process.env.API_KEY;
 
@@ -14,11 +15,15 @@ export default async function Home({ searchParams }) {
   if (!res.ok) {
     throw new Error('Failed to fetch data');
   }
+
+  console.log(data);
   const results = data.results;
+  
+    
 
   return (
     <div>
-      <Results results={results} />
+      <Results results={results}  />
     </div>
   );
 }

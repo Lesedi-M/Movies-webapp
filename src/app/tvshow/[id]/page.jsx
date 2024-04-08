@@ -4,9 +4,9 @@ import Head from 'next/head';
 
 export default async function MoviePage({params}) {
     const movieId = params.id;
-    const res = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.API_KEY}`);
-    const cast = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${process.env.API_KEY}`);
-    const trailerResponse = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${process.env.API_KEY}`);
+    const res = await fetch(`https://api.themoviedb.org/3/tv/${movieId}?api_key=${process.env.API_KEY}`);
+    const cast = await fetch(`https://api.themoviedb.org/3/tv/${movieId}/credits?api_key=${process.env.API_KEY}`);
+    const trailerResponse = await fetch(`https://api.themoviedb.org/3/tv/${movieId}/videos?api_key=${process.env.API_KEY}`);
     const trailerData = await trailerResponse.json();
 
     // Filter the results to get only the trailer
